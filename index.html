@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,32 @@
     <script src="./main.js"></script>
     <title>QR Code Generator</title>
 </head>
+
 <body onload="connection();">
     <section class="animated-background">
         <div id="stars1"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-      </section> 
-      <main>
+    </section>
+    <main>
         <div class="container">
             <form name="link_frm" class="frm">
-                <input class="inp" type="text" name="txt" placeholder="Enter Link or Text" >
-                <button type="button" class="btn" onclick="generator();">Generate</button>
+                <input class="inp" type="text" name="txt" placeholder="Enter Link or Text">
+                <button id="gnrt" type="button" class="btn" onclick="generator();">Generate</button>
             </form>
             <div class="container result">
-                <div class="row" >
-                    <img id="QR"  class="qr" src="./t.png" alt="Qr" />
+                <div class="row">
+                    <img id="QR" class="qr" src="./t.png" alt="Qr" />
                 </div>
                 <div class="row">
                     <button id="dwnld" type="button" class="dwnld">Download</button>
                 </div>
             </div>
         </div>
-      </main>
-      <div id="hashtag">
+    </main>
+    <div id="hashtag">
         made with ❤ by tomin
-      </div>
+    </div>
 </body>
+
 </html>
