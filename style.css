@@ -65,3 +65,10 @@
     width: 296px ;
     height: 296px;
 }
+
+.coffee{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    
+}
