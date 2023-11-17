@@ -70,5 +70,20 @@
     position: fixed;
     top: 20px;
     right: 20px;
+    height: 40px ;
+    width: 150px ;
     
+}
+@media screen and (max-width :996px){
+    .coffee{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        height: 25px ;
+        width: 80px ;
+        
+    }
+    .title{
+        font-size: 45px !important;
+    }
 }
