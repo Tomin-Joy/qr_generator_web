@@ -1,4 +1,3 @@
-var stat = false;
 function extractDomain(url) {
   try {
     const domain = new URL(url).hostname;
@@ -22,15 +21,14 @@ function connection() {
     .then((response) => {
       if (response.ok) {
         console.log("API is reachable");
-        stat = true;
+        gnrt.disabled=false;
+        gnrt.innerText="Generate";
       } else {
         console.error(`API is not reachable. Status: ${response.status}`);
-        stat = false;
       }
     })
     .catch((error) => {
       console.error("Error:", error);
-      stat = false;
     });
 }
 
